@@ -41,12 +41,12 @@ function askQuestion() {
   //candidateAnswer = input.question(question);
   //return candidateAnswer
 
-  for (let i = 0; i < questions.length; i++){
-      let canAnswers = prompt(questions[i].trim);
+  for (let i = 0 ; i < questions.length; i++)
+    {
+      let canAnswers = input.question(questions[i]);
       candidateAnswers.push(canAnswers);
-  }
-  return candidateAnswers;
-  //console.log(candidateAnswers);
+    }
+    return candidateAnswers;
 };
 
 
